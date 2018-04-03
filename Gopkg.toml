@@ -24,9 +24,9 @@ required = ["github.com/kubernetes-sig-testing/frameworks/integration",
   go-tests = true
 
 # Comment to update deps with dep tool
-#[[constraint]]
-#  version = "v1.9-alpha.25"
-#  name = "github.com/kubernetes-sigs/kubebuilder"
+[[constraint]]
+  version = "v1beta1.1"
+  name = "github.com/kubernetes-sigs/kubebuilder"
 
 [[constraint]]
   name = "github.com/golang/glog"
@@ -40,11 +40,11 @@ required = ["github.com/kubernetes-sig-testing/frameworks/integration",
   name = "github.com/onsi/gomega"
   version = "1.2.0"
 
-[[constraint]]
+[[override]]
   name = "github.com/pkg/errors"
   revision = "a22138067af1c4942683050411a841ade67fe1eb"
 
-[[constraint]]
+[[override]]
   name = "github.com/spf13/cobra"
   revision = "f62e98d28ab7ad31d707ba837a966378465c7b57"
 
@@ -64,7 +64,7 @@ required = ["github.com/kubernetes-sig-testing/frameworks/integration",
   branch = "release-1.9"
   name = "k8s.io/apimachinery"
 
-[[constraint]]
+[[override]]
   branch = "release-1.9"
   name = "k8s.io/apiserver"
 
@@ -72,7 +72,7 @@ required = ["github.com/kubernetes-sig-testing/frameworks/integration",
   branch = "release-6.0"
   name = "k8s.io/client-go"
 
-[[constraint]]
+[[override]]
   branch = "release-1.9"
   name = "k8s.io/kube-aggregator"
 
