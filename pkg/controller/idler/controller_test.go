@@ -14,8 +14,8 @@ import (
 	core "k8s.io/client-go/testing"
 	"k8s.io/client-go/tools/record"
 
-	idling "github.com/openshift/origin-idler/pkg/apis/idling/v1alpha2"
-	. "github.com/openshift/origin-idler/pkg/controller/idler"
+	idling "github.com/openshift/service-idler/pkg/apis/idling/v1alpha2"
+	. "github.com/openshift/service-idler/pkg/controller/idler"
 )
 
 // okErr represents return (bool, error) in struct form

@@ -1,7 +1,7 @@
 package fake
 
 import (
-	v1alpha2 "github.com/openshift/origin-idler/pkg/client/clientset/versioned/typed/idling/v1alpha2"
+	v1alpha2 "github.com/openshift/service-idler/pkg/client/clientset/versioned/typed/idling/v1alpha2"
 	rest "k8s.io/client-go/rest"
 	testing "k8s.io/client-go/testing"
 )

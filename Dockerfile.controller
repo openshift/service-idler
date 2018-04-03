@@ -17,7 +17,7 @@ RUN chmod +x $TEST_ASSET_KUBE_APISERVER
 RUN chmod +x $TEST_ASSET_KUBECTL
 
 # Copy in the go src
-WORKDIR /go/src/github.com/openshift/origin-idler
+WORKDIR /go/src/github.com/openshift/service-idler
 COPY pkg/    pkg/
 COPY cmd/    cmd/
 COPY vendor/ vendor/
@@ -30,6 +30,6 @@ RUN go test ./pkg/... ./cmd/...
 FROM scratch
 # RUN apk --no-cache add ca-certificates
 WORKDIR /root/
-COPY --from=builder /go/src/github.com/openshift/origin-idler/controller-manager .
+COPY --from=builder /go/src/github.com/openshift/service-idler/controller-manager .
 ENTRYPOINT ["./controller-manager", "--logtostderr"]
 CMD ["--install-crds=false"]  

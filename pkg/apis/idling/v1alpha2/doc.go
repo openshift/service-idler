@@ -6,7 +6,7 @@
 
 // +k8s:openapi-gen=true
 // +k8s:deepcopy-gen=package,register
-// +k8s:conversion-gen=github.com/openshift/origin-idler/pkg/apis/idling
+// +k8s:conversion-gen=github.com/openshift/service-idler/pkg/apis/idling
 // +k8s:defaulter-gen=TypeMeta
 // +groupName=idling.openshift.io
-package v1alpha2 // import "github.com/openshift/origin-idler/pkg/apis/idling/v1alpha2"
+package v1alpha2 // import "github.com/openshift/service-idler/pkg/apis/idling/v1alpha2"

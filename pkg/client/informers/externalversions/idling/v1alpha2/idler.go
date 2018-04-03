@@ -3,10 +3,10 @@
 package v1alpha2
 
 import (
-	idling_v1alpha2 "github.com/openshift/origin-idler/pkg/apis/idling/v1alpha2"
-	versioned "github.com/openshift/origin-idler/pkg/client/clientset/versioned"
-	internalinterfaces "github.com/openshift/origin-idler/pkg/client/informers/externalversions/internalinterfaces"
-	v1alpha2 "github.com/openshift/origin-idler/pkg/client/listers/idling/v1alpha2"
+	idling_v1alpha2 "github.com/openshift/service-idler/pkg/apis/idling/v1alpha2"
+	versioned "github.com/openshift/service-idler/pkg/client/clientset/versioned"
+	internalinterfaces "github.com/openshift/service-idler/pkg/client/informers/externalversions/internalinterfaces"
+	v1alpha2 "github.com/openshift/service-idler/pkg/client/listers/idling/v1alpha2"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	watch "k8s.io/apimachinery/pkg/watch"

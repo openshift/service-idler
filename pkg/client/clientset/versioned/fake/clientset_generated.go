@@ -1,9 +1,9 @@
 package fake
 
 import (
-	clientset "github.com/openshift/origin-idler/pkg/client/clientset/versioned"
-	idlingv1alpha2 "github.com/openshift/origin-idler/pkg/client/clientset/versioned/typed/idling/v1alpha2"
-	fakeidlingv1alpha2 "github.com/openshift/origin-idler/pkg/client/clientset/versioned/typed/idling/v1alpha2/fake"
+	clientset "github.com/openshift/service-idler/pkg/client/clientset/versioned"
+	idlingv1alpha2 "github.com/openshift/service-idler/pkg/client/clientset/versioned/typed/idling/v1alpha2"
+	fakeidlingv1alpha2 "github.com/openshift/service-idler/pkg/client/clientset/versioned/typed/idling/v1alpha2/fake"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/discovery"

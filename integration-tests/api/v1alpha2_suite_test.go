@@ -12,8 +12,8 @@ import (
     "github.com/kubernetes-sigs/kubebuilder/pkg/test"
     "k8s.io/client-go/rest"
 
-    "github.com/openshift/origin-idler/pkg/inject"
-    "github.com/openshift/origin-idler/pkg/client/clientset/versioned"
+    "github.com/openshift/service-idler/pkg/inject"
+    "github.com/openshift/service-idler/pkg/client/clientset/versioned"
 )
 
 var testenv *test.TestEnvironment

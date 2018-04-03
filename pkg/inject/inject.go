@@ -4,7 +4,7 @@ import (
 	injectargs "github.com/kubernetes-sigs/kubebuilder/pkg/inject/args"
 	"github.com/kubernetes-sigs/kubebuilder/pkg/inject/run"
 
-	"github.com/openshift/origin-idler/pkg/inject/args"
+	"github.com/openshift/service-idler/pkg/inject/args"
 )
 
 var (

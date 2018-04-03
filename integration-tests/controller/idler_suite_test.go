@@ -15,9 +15,9 @@ import (
     "k8s.io/client-go/kubernetes"
     "k8s.io/client-go/rest"
 
-    "github.com/openshift/origin-idler/pkg/client/clientset/versioned"
-    "github.com/openshift/origin-idler/pkg/inject"
-    "github.com/openshift/origin-idler/pkg/inject/args"
+    "github.com/openshift/service-idler/pkg/client/clientset/versioned"
+    "github.com/openshift/service-idler/pkg/inject"
+    "github.com/openshift/service-idler/pkg/inject/args"
 )
 
 var (

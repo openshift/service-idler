@@ -3,7 +3,7 @@ package idler
 import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	idling "github.com/openshift/origin-idler/pkg/apis/idling/v1alpha2"
+	idling "github.com/openshift/service-idler/pkg/apis/idling/v1alpha2"
 )
 
 // CoWIdler is a copy-on-write abstraction over the idler object.

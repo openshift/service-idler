@@ -3,9 +3,9 @@
 package externalversions
 
 import (
-	versioned "github.com/openshift/origin-idler/pkg/client/clientset/versioned"
-	idling "github.com/openshift/origin-idler/pkg/client/informers/externalversions/idling"
-	internalinterfaces "github.com/openshift/origin-idler/pkg/client/informers/externalversions/internalinterfaces"
+	versioned "github.com/openshift/service-idler/pkg/client/clientset/versioned"
+	idling "github.com/openshift/service-idler/pkg/client/informers/externalversions/idling"
+	internalinterfaces "github.com/openshift/service-idler/pkg/client/informers/externalversions/internalinterfaces"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

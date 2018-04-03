@@ -1,7 +1,7 @@
 package fake
 
 import (
-	idlingv1alpha2 "github.com/openshift/origin-idler/pkg/apis/idling/v1alpha2"
+	idlingv1alpha2 "github.com/openshift/service-idler/pkg/apis/idling/v1alpha2"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

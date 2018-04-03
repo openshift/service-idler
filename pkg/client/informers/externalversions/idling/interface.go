@@ -3,8 +3,8 @@
 package idling
 
 import (
-	v1alpha2 "github.com/openshift/origin-idler/pkg/client/informers/externalversions/idling/v1alpha2"
-	internalinterfaces "github.com/openshift/origin-idler/pkg/client/informers/externalversions/internalinterfaces"
+	v1alpha2 "github.com/openshift/service-idler/pkg/client/informers/externalversions/idling/v1alpha2"
+	internalinterfaces "github.com/openshift/service-idler/pkg/client/informers/externalversions/internalinterfaces"
 )
 
 // Interface provides access to each of this group's versions.

@@ -1,8 +1,8 @@
 package v1alpha2
 
 import (
-	v1alpha2 "github.com/openshift/origin-idler/pkg/apis/idling/v1alpha2"
-	scheme "github.com/openshift/origin-idler/pkg/client/clientset/versioned/scheme"
+	v1alpha2 "github.com/openshift/service-idler/pkg/apis/idling/v1alpha2"
+	scheme "github.com/openshift/service-idler/pkg/client/clientset/versioned/scheme"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"

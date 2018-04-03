@@ -11,8 +11,8 @@ import (
 	"github.com/kubernetes-sigs/kubebuilder/pkg/controller/types"
     metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-    . "github.com/openshift/origin-idler/pkg/apis/idling/v1alpha2"
-    . "github.com/openshift/origin-idler/pkg/client/clientset/versioned/typed/idling/v1alpha2"
+    . "github.com/openshift/service-idler/pkg/apis/idling/v1alpha2"
+    . "github.com/openshift/service-idler/pkg/client/clientset/versioned/typed/idling/v1alpha2"
 )
 
 // EDIT THIS FILE!

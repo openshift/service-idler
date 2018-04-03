@@ -3,10 +3,10 @@ package inject
 
 import (
 	"github.com/kubernetes-sigs/kubebuilder/pkg/inject/run"
-	idlingv1alpha2 "github.com/openshift/origin-idler/pkg/apis/idling/v1alpha2"
-	rscheme "github.com/openshift/origin-idler/pkg/client/clientset/versioned/scheme"
-	"github.com/openshift/origin-idler/pkg/controller/idler"
-	"github.com/openshift/origin-idler/pkg/inject/args"
+	idlingv1alpha2 "github.com/openshift/service-idler/pkg/apis/idling/v1alpha2"
+	rscheme "github.com/openshift/service-idler/pkg/client/clientset/versioned/scheme"
+	"github.com/openshift/service-idler/pkg/controller/idler"
+	"github.com/openshift/service-idler/pkg/inject/args"
 	corev1 "k8s.io/api/core/v1"
 	rbacv1 "k8s.io/api/rbac/v1"
 	"k8s.io/apimachinery/pkg/runtime/schema"

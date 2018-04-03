@@ -19,11 +19,11 @@ import (
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/tools/record"
 
-	idling "github.com/openshift/origin-idler/pkg/apis/idling/v1alpha2"
-	idlingclient "github.com/openshift/origin-idler/pkg/client/clientset/versioned/typed/idling/v1alpha2"
-	idlinginformer "github.com/openshift/origin-idler/pkg/client/informers/externalversions/idling/v1alpha2"
-	idlinglister "github.com/openshift/origin-idler/pkg/client/listers/idling/v1alpha2"
-	"github.com/openshift/origin-idler/pkg/inject/args"
+	idling "github.com/openshift/service-idler/pkg/apis/idling/v1alpha2"
+	idlingclient "github.com/openshift/service-idler/pkg/client/clientset/versioned/typed/idling/v1alpha2"
+	idlinginformer "github.com/openshift/service-idler/pkg/client/informers/externalversions/idling/v1alpha2"
+	idlinglister "github.com/openshift/service-idler/pkg/client/listers/idling/v1alpha2"
+	"github.com/openshift/service-idler/pkg/inject/args"
 )
 
 // TODO: set status conditions?

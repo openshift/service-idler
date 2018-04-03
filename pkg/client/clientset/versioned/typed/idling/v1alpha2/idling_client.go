@@ -1,8 +1,8 @@
 package v1alpha2
 
 import (
-	v1alpha2 "github.com/openshift/origin-idler/pkg/apis/idling/v1alpha2"
-	"github.com/openshift/origin-idler/pkg/client/clientset/versioned/scheme"
+	v1alpha2 "github.com/openshift/service-idler/pkg/apis/idling/v1alpha2"
+	"github.com/openshift/service-idler/pkg/client/clientset/versioned/scheme"
 	serializer "k8s.io/apimachinery/pkg/runtime/serializer"
 	rest "k8s.io/client-go/rest"
 )

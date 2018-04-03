@@ -11,8 +11,8 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/scale"
 
-	"github.com/openshift/origin-idler/pkg/client/clientset/versioned"
-	"github.com/openshift/origin-idler/pkg/client/informers/externalversions"
+	"github.com/openshift/service-idler/pkg/client/clientset/versioned"
+	"github.com/openshift/service-idler/pkg/client/informers/externalversions"
 )
 
 // InjectArgs are the arguments need to initialize controllers

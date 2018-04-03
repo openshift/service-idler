@@ -2,7 +2,7 @@ package versioned
 
 import (
 	glog "github.com/golang/glog"
-	idlingv1alpha2 "github.com/openshift/origin-idler/pkg/client/clientset/versioned/typed/idling/v1alpha2"
+	idlingv1alpha2 "github.com/openshift/service-idler/pkg/client/clientset/versioned/typed/idling/v1alpha2"
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
 	flowcontrol "k8s.io/client-go/util/flowcontrol"
