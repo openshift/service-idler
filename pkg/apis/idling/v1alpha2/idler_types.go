@@ -25,17 +25,21 @@ import (
 // as a go struct.
 // NOTE: json tags are required.  Any new fields you add must have json tags for the fields to be serialized.
 
+// NB: slice types *must* be omitempty, otherwise the CRD
+// validator will complain that slices can't be null (since nil slices
+// become null, not empty arrays).
+
 // IdlerSpec defines the desired state of Idler
 type IdlerSpec struct {
 	// WantIdle represents the desired state of idling
 	WantIdle bool `json:"wantIdle"`
 	// TargetScalables contains the collection of scalables that
 	// are idled/unidled together.
-	TargetScalables []CrossGroupObjectReference `json:"targetScalables"`
+	TargetScalables []CrossGroupObjectReference `json:"targetScalables,omitempty"`
 	// TriggerServiceNames contains the collection of services that shold
 	// trigger unidling.  Their corresponding endpoints objects will be
 	// used to determine whether or not unidling is successful.
-	TriggerServiceNames []string `json:"triggerServiceNames"`
+	TriggerServiceNames []string `json:"triggerServiceNames,omitempty"`
 }
 
 // IdlerStatus defines the observed state of Idler
@@ -43,10 +47,10 @@ type IdlerStatus struct {
 	// Idled represents the current state of idling
 	Idled bool `json:"idled"`
 	// UnidleScales contains the previous scales of idled scalables
-	UnidledScales []UnidleInfo `json:"unidledScales"`
+	UnidledScales []UnidleInfo `json:"unidledScales,omitempty"`
 	// InactiveServiceNames contains services in the process of
 	// unidling that have not yet become active.
-	InactiveServiceNames []string `json:"inactiveServiceNames"`
+	InactiveServiceNames []string `json:"inactiveServiceNames,omitempty"`
 }
 
 // UnidleInfo represents the information needed to restore an idled object
