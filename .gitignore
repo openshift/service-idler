@@ -1,4 +1,4 @@
 *~
 *.swp
 /bin
-/vendor
+/_output

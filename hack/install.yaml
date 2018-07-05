@@ -125,7 +125,6 @@ spec:
                 type: object
               type: array
           type: object
-      type: object
   version: v1alpha2
 status:
   acceptedNames:
@@ -179,7 +178,7 @@ spec:
         platform: kubernetes_sigs_kubebuilder
     spec:
       containers:
-      - image: idling-controller:a1
+      - image: openshift/origin-service-idler
         name: controller-manager
         resources:
           limits:

@@ -94,3 +94,9 @@ repository.  It must be restored before building using `dep ensure
 The `hack/install.yaml` file contains the required Kubernetes objects to
 install the CRD and launch the controller on a Kubernetes cluster (run
 `kubectl apply -f hack/install.yaml`).
+
+### RPM Images
+
+The `images` directory contains a Dockerfile designed for use with an
+RPM-based setup.  The corresponding RPM can be produced using
+`service-idler.spec`.   It's probably not relevant for most people.
