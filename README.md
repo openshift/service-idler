@@ -18,7 +18,7 @@ apiVersion: idling.openshift.io/v1alpha2
 metadata:
   name: sample
 spec:
-  wantIdled: false
+  wantIdle: false
   targetScalables:
   - group: apps
     resource: deployment
@@ -28,9 +28,9 @@ spec:
 ```
 
 The Idler object specifies those scalables, as well as a set of trigger
-services (see below).  When the `.spec.wantIdled` field is set to true,
-the idling controller will ensure that all scalables are scaled to zero,
-and that their previous scales are recorded:
+services (see below).  When the `.spec.wantIdle` field is set to true, the
+idling controller will ensure that all scalables are scaled to zero, and
+that their previous scales are recorded:
 
 ```yaml
 kind: Idler
@@ -38,7 +38,7 @@ apiVersion: idling.openshift.io/v1alpha2
 metadata:
   name: sample
 spec:
-  wantIdled: false
+  wantIdle: false
   targetScalables:
   - group: apps
     resource: deployment
@@ -56,7 +56,7 @@ status:
     previousScale: 2
 ```
 
-When the `wantIdled` field is flipped back to false, the controller will
+When the `wantIdle` field is flipped back to false, the controller will
 ensure that all target scalables are returned to their previous scales,
 and clear `unidledScales` and `inactiveServiceNames` (which represents the
 trigger services that don't yet have ready endpoints).
@@ -71,7 +71,7 @@ determine when they should consider services for unidling -- the `idled`
 field will be set to true from the time that the idling controller
 *starts* scaling down its scalables, to the time when all trigger services
 have *at least* one endpoint ready.  To trigger unidling, a proxy simply
-has to patch the idler to set `.spec.wantIdled` to true.
+has to patch the idler to set `.spec.wantIdle` to true.
 
 For an example, see [the OpenShift Origin unidling
 proxy](https://github.com/openshift/origin/blob/master/pkg/proxy).
