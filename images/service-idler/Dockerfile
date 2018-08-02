@@ -12,4 +12,4 @@ LABEL io.k8s.display-name="OpenShift Container Platform Service Idler" \
 # the service-idler doesn't require root
 USER 1001
 
-ENTRYPOINT ["/usr/bin/metrics-server", "--logtostderr", "--install-crds=false"]
+ENTRYPOINT ["/usr/bin/service-idler", "--logtostderr", "--install-crds=false"]
