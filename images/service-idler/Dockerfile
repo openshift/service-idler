@@ -1,4 +1,4 @@
-FROM openshift/origin-base
+FROM registry.svc.ci.openshift.org/ocp/4.6:base
 
 RUN INSTALL_PKGS="origin-service-idler" && \
     yum --enablerepo=origin-local-release install -y ${INSTALL_PKGS} && \
