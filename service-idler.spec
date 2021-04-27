@@ -45,7 +45,9 @@ ln -s $(pwd) gopath/src/%{import_path}
 export GOPATH=$(pwd)/gopath
 
 # actually build
-go build -o service-idler %{import_path}/cmd/service-idler
+# From Go 1.16, the go command builds packages in module-aware mode by default, even when no go.mod is present.
+# Setting GO111MODULE=auto allows to continue to build this package in GOPATH mode.
+GO111MODULE=auto go build -o service-idler %{import_path}/cmd/service-idler
 
 %install
 install -d %{buildroot}%{_bindir}
